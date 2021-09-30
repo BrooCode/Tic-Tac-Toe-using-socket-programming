@@ -2,11 +2,14 @@ import pygame
 import socket
 import time
 import os
-import main as ma
+import json
 os.environ['SDL_VIDEO_WINDOW_POS'] = str(10) + "," + str(40)
 
 screen=pygame.display.set_mode((300,300))
 
+f = open('data.json',)
+ 
+data = json.load(f)
 
 ico=pygame.image.load('assets\icon1.jpg')
 icon=pygame.transform.scale(ico,(32,32))
@@ -14,10 +17,11 @@ pygame.display.set_icon(icon)
 
 # over here get the player 1 name
 
-pygame.display.set_caption('p1')
+pygame.display.set_caption(data['player1'])
 host1 = '127.0.0.10'
 
 port1 = 8080
+
 
 def main():
 
