@@ -1,7 +1,7 @@
 # Tic-Tac-Toe-using-socket-programming
 Tkinter and PyGame
 
-In the project Directory Run these command for Successfull Execution : <br>
+In the project Directory Run these command on terminal for Successfull Execution : <br>
 -pip install -r requirements.txt <br>
 -python main.py <br>
 -python 2.py <br>
